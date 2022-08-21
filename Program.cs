@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace Snake
 {
     class Program
     {
-        static void Main(string [] args)
+        static void Main(string[] args)
         {
             Console.Clear();
             //Console.SetBufferSize(5, 25);
@@ -20,23 +21,9 @@ namespace Snake
             downLine.Drow();
             leftLine.Drow();
             rightLine.Drow();
-                 
+
             Point p = new Point(4, 5, '*');
-            p.Drow();
-
-           
-
-
-            
-            
-
-
-            
-            
-            
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
         }
-        
     }
 }
-
-
